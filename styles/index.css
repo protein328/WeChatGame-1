@@ -408,7 +408,7 @@ html, body {
   margin-top: 5%;
   overflow: scroll;
 }
-.rules .title{
+.rules .rules-title{
   text-align: center;
   font-weight:700;
 }
