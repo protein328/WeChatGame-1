@@ -293,13 +293,14 @@ html, body {
   width: 3.2rem;
   height: 0.8rem;
   margin-top: -0.4rem;
-  top: calc(50% + 3.3rem);
+  top:unset;
+  bottom:5px;
   left: 50%;
   margin-left: -1.6rem;
   font-size: 0.35rem;
   text-align: center;
   color:#fff;
-  background:rgba(255,255,255,0.3);
+  background:rgba(0,0,0,0.3);
   line-height: 0.8rem;
   border-radius: 0.17rem;
 }
@@ -386,8 +387,9 @@ html, body {
     transition: all 0.4s ease-in-out;
     opacity: 1;
     z-index: 1000;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: .25rem;
+    color:#2C0B00;
+    line-height: .3rem;
     background: #fff;
     width: 84%;
     margin: 5% auto;
