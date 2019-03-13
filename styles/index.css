@@ -284,6 +284,9 @@ html, body {
   left: 50%;
   margin-left: -2.5rem;
 }
+.rules ol{
+  list-style: none;
+}
 .rules .rules-btn {
   position: absolute;
   z-index: 102;
