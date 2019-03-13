@@ -291,18 +291,20 @@ html, body {
   position: absolute;
   z-index: 102;
   width: 3.2rem;
-  height: 0.8rem;
+  height: 0.6rem;
   margin-top: -0.4rem;
-  top:unset;
-  bottom:5px;
+  top: unset;
+  bottom: 10px;
   left: 50%;
   margin-left: -1.6rem;
-  font-size: 0.35rem;
+  font-size: 0.3rem;
+  font-family:"Helvetica Neue", Helvetica, Arial;
   text-align: center;
-  color:#fff;
-  background:rgba(0,0,0,0.3);
-  line-height: 0.8rem;
-  border-radius: 0.17rem;
+  color: #fff;
+  background: goldenrod;
+  line-height: 0.6rem;
+  border-radius: 0.1rem;
+
 }
 .rules a.rules-link{
   font-size: .25rem;
@@ -387,11 +389,13 @@ html, body {
     transition: all 0.4s ease-in-out;
     opacity: 1;
     z-index: 1000;
-    font-size: .25rem;
-    color:#2C0B00;
-    line-height: .3rem;
+    font-size: .3rem;
+    color: #2C0B00;
+    line-height: .4rem;
+    font-family: "微软雅黑", Helvetica, Arial;
     background: #fff;
     width: 84%;
+    right: 0;
     margin: 5% auto;
     height: 95%;
     border-radius: 4px;
@@ -399,6 +403,14 @@ html, body {
 }
 .rules li{
   margin-top: 0.2rem;
+}
+.rules ol{
+  margin-top: 5%;
+  overflow: scroll;
+}
+.rules .title{
+  text-align: center;
+  font-weight:700;
 }
 .container.not-follower .title {
   animation: title_drop 0.5s ease-in forwards;
