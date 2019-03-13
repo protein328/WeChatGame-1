@@ -284,7 +284,7 @@ html, body {
   left: 50%;
   margin-left: -2.5rem;
 }
-.rules a {
+.rules .rules-btn {
   position: absolute;
   z-index: 102;
   width: 3.2rem;
@@ -299,6 +299,10 @@ html, body {
   background:rgba(255,255,255,0.3);
   line-height: 0.8rem;
   border-radius: 0.17rem;
+}
+.rules a.rules-link{
+  font-size: .25rem;
+  color: #d3903a;
 }
 
 .btn-mute {
@@ -374,13 +378,23 @@ html, body {
 }
 
 .container.showrules .rules {
-  display: block;
-  transform: scale(1, 1);
-  transition: all 0.4s ease-in-out;
-  opacity: 1;
-  z-index: 1000;
+    display: block;
+    transform: scale(1, 1);
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    z-index: 1000;
+    font-size: 18px;
+    line-height: 24px;
+    background: #fff;
+    width: 84%;
+    margin: 5% auto;
+    height: 95%;
+    border-radius: 4px;
+    padding: 0 5%;
 }
-
+.rules li{
+  margin-top: 0.2rem;
+}
 .container.not-follower .title {
   animation: title_drop 0.5s ease-in forwards;
 }
