@@ -309,6 +309,7 @@ html, body {
 .rules a.rules-link{
   font-size: .25rem;
   color: #d3903a;
+  text-decoration: underline;
 }
 
 .btn-mute {
@@ -363,10 +364,23 @@ html, body {
 }
 
 .container.loaded .rules {
-  transform: scale(1, 0.5);
+  /* transform: scale(1, 0.5); */
   display: block;
-  opacity: 0;
   z-index: 1;
+  opacity: 1;
+    z-index: 1000;
+    font-size: .3rem;
+    color: #2C0B00;
+    line-height: .4rem;
+    font-family: "微软雅黑", Helvetica, Arial;
+    background: #fff;
+    width: 84%;
+    right: 0;
+    margin: 5% auto;
+    height: 95%;
+    border-radius: 4px;
+    padding: 0 5%;
+    display: none;
 }
 
 .container.loaded .fishes, .container.showrules .fishes {
@@ -385,8 +399,8 @@ html, body {
 
 .container.showrules .rules {
     display: block;
-    transform: scale(1, 1);
-    transition: all 0.4s ease-in-out;
+    /* transform: scale(1, 1); */
+    /* transition: all 0.4s ease-in-out; */
     opacity: 1;
     z-index: 1000;
     font-size: .3rem;
