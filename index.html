@@ -9,7 +9,16 @@
   <link rel="stylesheet" href="css/cny_koi_fish.css" />
   <link rel="stylesheet" href="styles/index.css" />
   <link rel="stylesheet" href="styles/base.css" />
+  <script>
+  $(function(){
+      var rules_height = $('.rules').innerHeight();
+      console.log(rules_height)
+      $('.rules ol').css({
+        height:rules_height*83% + 'px'
+      })
+    })
 
+  </script>
  </head>
  <body>
    <!-- {#  -->
@@ -121,17 +130,17 @@
     </div>
     <a href="javascript:void(0)" class="btn-mute play" id="audio"><img src="images/mute.svg" alt="" /></a>
     <div class="rules">
-	<h5 class="rules-title">活动规则/游戏规则：</h5>
-     <ol>	
-     	<li>1． 此活动为“新加坡滨海湾金沙”官方微信粉丝专享。</li>
-     	<li>2． 每位参加者只限使用单一微信帐户参与活动。</li>
-     	<li><a class="rules-link" href="https://zh.marinabaysands.com/sands-rewards-lifestyle.html?utm_medium=social&utm_source=wechat&utm_campaign=wechatsrlcampaign">游戏开始前需绑定金沙尊赏会员卡及微信帐号，如还不是会员，可点此注册，注册后的确认邮件中列有会员号。</a></li>
-     	<li>3． 点击出现在屏幕上的“锦鲤”在18秒内完成游戏并获取10分以上即可赢得奖赏。</li>
-	     <li>4． 一个微信帐号可以玩三次。</li>
-	     <li>5． 每人只能于指定时段内只限换领一个奖品。</li>
-     	<li>6． 参加者须年满18周岁。</li>
-     	<li>7． 活动日期：即日起至2019年9月30日；奖品换领日期：列于每项奖券上。</li>
-	     <li>8． 如有任何争议，“新加坡滨海湾金沙”官方微信公众号持有最终裁决权</li>
+  <h5 class="rules-title">活动规则/游戏规则：</h5>
+     <ol> 
+      <li>1． 此活动为“新加坡滨海湾金沙”官方微信粉丝专享。</li>
+      <li>2． 每位参加者只限使用单一微信帐户参与活动。</li>
+      <li>游戏开始前需绑定金沙尊赏会员卡及微信帐号，<a class="rules-link" href="https://zh.marinabaysands.com/sands-rewards-lifestyle.html?utm_medium=social&utm_source=wechat&utm_campaign=wechatsrlcampaign">如还不是会员，可点此注册，</a>注册后的确认邮件中列有会员号。</li>
+      <li>3． 点击出现在屏幕上的“锦鲤”在18秒内完成游戏并获取10分以上即可赢得奖赏。</li>
+       <li>4． 一个微信帐号可以玩三次。</li>
+       <li>5． 每人只能于指定时段内只限换领一个奖品。</li>
+      <li>6． 参加者须年满18周岁。</li>
+      <li>7． 活动日期：即日起至2019年9月30日；奖品换领日期：列于每项奖券上。</li>
+       <li>8． 如有任何争议，“新加坡滨海湾金沙”官方微信公众号持有最终裁决权</li>
      </ol>
      <a class="rules-btn">我知道了</a>
     </div>
@@ -201,9 +210,16 @@
               })
           }
         })
-	var rules_height = $('.rules').innerHeight();
+      var rules_height = $('.rules').innerHeight();
+      console.log(rules_height)
       $('.rules ol').css({
         height:rules_height*0.75 + 'px'
+      })
+      $('#start-btn').click(function(){
+        $('.rules').fadeIn(500);
+      })
+      $('.rules-btn').click(function(){
+        $('.rules').hide();
       })
        </script>
        <script src="dist/main.js"></script>
